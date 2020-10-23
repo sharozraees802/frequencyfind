@@ -36,8 +36,32 @@ namespace FrequenctFind
 
             //}
 
+            //Console.ReadLine();
+
+
+
+
+            int[] data = new int []{58 ,54 ,47 ,40 ,39 ,35 ,50 ,37 ,49 ,42,70 ,32 ,44 ,52 ,39 ,50 ,40 ,53 ,34 ,69,50 ,42 ,52 ,38 ,36 ,45 ,35 ,43 ,48,46,39 ,45 ,63 ,42 ,44 ,63 ,60 ,27 ,42 ,48,62 ,57 ,35 ,60 ,32 ,49 ,68, 29, 57 ,38, };
+
+            int[] check = new int[] {36,37,38,39,40,41,42,43,44 };
+            int count = 0;
+            for (int i = 0; i <data.Length; i++)
+            {
+                
+                for (int j = 0; j < check.Length; j++)
+                {
+                    if (data[i]==check[j])
+                    {
+                        count++;
+                    }
+                  
+                }
+            }
+            Console.WriteLine("Range of given Limit is {0}:", count);
 
             Console.ReadLine();
+
+
         }
     }
 }
